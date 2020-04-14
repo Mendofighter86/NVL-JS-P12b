@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+        <script>
+            
+            function calcular(){
+
+            
+
+            for (i=0; i<50; i++) {
+                var numero=Math.floor((Math.random()*100)+1);
+                if(numero % 2==0){
+                    pares.push(numero);
+                }
+                else{
+                    impares.push(numero);
+                }
+            }
+            document.write("<p>Pares</p>"+pares+"</br>"+"<p>Impares</p>"+impares+"</br>");
+            }
+            var pares=[];
+            var impares=[];
+            calcular();
+        </script>
+    </head>
+    <body>
+    
+
+    </body>
+</html>
